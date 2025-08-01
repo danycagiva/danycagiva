@@ -1,4 +1,4 @@
-# Hi, I'm Daniel Rusanow 👋
+# Hi, I'm Daniel 👋
 
 I'm a passionate **Web Developer** specializing in modern web technologies, cloud infrastructure, and cross-platform app development. My journey started in web development and I continue to thrive building seamless digital experiences.
 
