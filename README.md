@@ -1,8 +1,8 @@
-# Hi, I'm Daniel 👋
+# Hi, I'm Daniel 
 
 I'm a passionate **Web Developer** specializing in modern web technologies, cloud infrastructure, and cross-platform app development. My journey started in web development and I continue to thrive building seamless digital experiences.
 
-## 🚀 Core Skills
+## Core Skills
 
 - **Front-End Development:**  
   - **JavaScript**, **HTML**, **CSS**, **Flutter/Dart**, **Swift**
@@ -16,7 +16,7 @@ I'm a passionate **Web Developer** specializing in modern web technologies, clou
   - **Flutter & Dart**: Beautiful, native-feeling apps from a single codebase
   - **Swift** (iOS/macOS): Native app design and Apple ecosystem integrations
 
-## 🏗️ What I Love Doing
+## What I Love Doing
 
 - Creating elegant, maintainable web interfaces and interactive UIs.
 - Building scalable backend systems and deploying end-to-end solutions to the cloud.
