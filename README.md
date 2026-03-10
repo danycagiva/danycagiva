@@ -5,7 +5,7 @@ I'm a passionate **Web Developer** specializing in modern web technologies, clou
 ## Core Skills
 
 - **Front-End Development:**  
-  - **JavaScript**, **HTML**, **CSS**, **Flutter/Dart**, **Swift**
+  - **JavaScript**, **HTML**, **CSS**, **Flutter/Dart**, **Swift**, **Python**
   - Modern frameworks: **React** (and Hooks, Context, SPA, SSR)
 - **Back-End / Full-Stack:**  
   - REST APIs, modern JS toolchains, Node.js (occasionally)
