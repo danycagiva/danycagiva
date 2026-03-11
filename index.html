@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daniel Rusanow | Web Developer</title>
+    <meta name="author" content="Daniel Rusanow">
+    <meta name="description"
+        content="Portfolio of a passionate Web Developer specializing in modern web technologies, cloud infrastructure, and cross-platform app development.">
+
+    <!-- Material Symbols -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+        rel="stylesheet" />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;700;900&family=Roboto+Flex:opsz,wght@8..144,300..800&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Preloader -->
+    <div class="preloader">
+        <div class="preloader-counter">0%</div>
+    </div>
+
+    <!-- Breathing Viewport Glow -->
+    <div id="viewport-glow"></div>
+
+    <!-- Custom Cursor -->
+    <div id="cursor"></div>
+    <div id="cursor-aura"></div>
+
+    <!-- Ambient Mouse Orb -->
+    <div id="ambient-orb"></div>
+
+    <!-- Navigation -->
+    <nav class="top-nav">
+        <div class="nav-brand">Daniel Rusanow</div>
+        <div class="nav-links">
+            <a href="#work" class="nav-link" data-cursor-hover>Work</a>
+            <a href="#about" class="nav-link" data-cursor-hover>About</a>
+            <a href="#contact" class="nav-link" data-cursor-hover>Contact</a>
+        </div>
+    </nav>
+
+    <!-- Main Scroll Wrapper -->
+    <main id="smooth-wrapper">
+        <div id="smooth-content">
+
+            <!-- Hero Section (Massive Typography) -->
+            <section class="hero full-screen">
+                <div class="hero-inner">
+                    <div class="hero-label reveal-up">Developer & Cloud Architect</div>
+                    <h1 class="hero-title">
+                        <span class="line reveal-up pb-fix">Building</span>
+                        <span class="line reveal-up pb-fix">Seamless</span>
+                        <span class="line reveal-up italic pb-fix">Digital Realities.</span>
+                    </h1>
+                </div>
+            </section>
+
+            <!-- Master Unified Transition -->
+            <section id="unified-transition" class="unified-transition">
+                <div class="zoom-section">
+                    <div class="zoom-sticky">
+                        <svg class="zoom-svg" id="zoom-svg" viewBox="0 0 1000 400" preserveAspectRatio="xMidYMid slice">
+                            <text id="zoom-text-element" x="50%" y="55%" text-anchor="middle" dominant-baseline="middle"
+                                font-family="'Outfit', sans-serif" font-weight="900" font-size="160px"
+                                letter-spacing="-0.03em" fill="var(--md-sys-color-on-background)">
+                                WORK
+                            </text>
+                        </svg>
+                    </div>
+                    <!-- Dark wipe overlay — expands via clip-path from the R stem position -->
+                    <div class="zoom-wipe"></div>
+                </div>
+
+                <!-- Horizontal Scroll Journey (Skills & Passions) -->
+                <div id="work" class="horizontal-scroll-container">
+                    <div class="horizontal-scroll-wrapper">
+
+                        <!-- Intro Slide -->
+                        <div class="hs-slide hs-intro">
+                            <h2 class="display-massive">Core<br>Skills</h2>
+                            <p class="body-large m3-on-surface-variant">Scroll on to explore my technical
+                                universe.</p>
+                            <span class="material-symbols-rounded scroll-indicator">arrow_right_alt</span>
+                        </div>
+
+                        <!-- Front-End Card -->
+                        <div class="hs-slide">
+                            <div class="m3-hero-card" data-cursor-hover>
+                                <div class="card-bg"></div>
+                                <div class="card-content card-split">
+                                    <!-- Left: text -->
+                                    <div class="card-text">
+                                        <div class="custom-icon">
+                                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                                <path stroke-linecap="round" stroke-linejoin="round"
+                                                    d="M17.25 6.75 22.5 12l-5.25 5.25m-10.5 0L1.5 12l5.25-5.25m7.5-3-4.5 16.5" />
+                                            </svg>
+                                        </div>
+                                        <h3 class="display-medium">Front-End / UI</h3>
+                                        <p class="body-large text-popped">JavaScript, Swift, Flutter/Dart, React, HTML, CSS,</p>
+                                        <div class="tags">
+                                            <span>Hooks</span><span>SSR</span><span>SPA</span>
+                                        </div>
+                                    </div>
+                                    <!-- Right: 3D layered stack visualization -->
+                                    <div class="card-tech-showcase">
+                                        <svg class="tech-layers-svg" viewBox="0 0 100 71" xmlns="http://www.w3.org/2000/svg">
+                                            <defs>
+                                                <linearGradient id="grad-html" x1="0%" y1="0%" x2="100%" y2="0%">
+                                                    <stop offset="0%" stop-color="#E44D26"/>
+                                                    <stop offset="100%" stop-color="#F16529"/>
+                                                </linearGradient>
+                                                <linearGradient id="grad-js" x1="0%" y1="0%" x2="100%" y2="0%">
+                                                    <stop offset="0%" stop-color="#F7DF1E"/>
+                                                    <stop offset="100%" stop-color="#C8A800"/>
+                                                </linearGradient>
+                                                <linearGradient id="grad-react" x1="0%" y1="0%" x2="100%" y2="0%">
+                                                    <stop offset="0%" stop-color="#53C1DE"/>
+                                                    <stop offset="100%" stop-color="#0A7FA3"/>
+                                                </linearGradient>
+                                                <filter id="glow-html" x="-20%" y="-20%" width="140%" height="140%">
+                                                    <feDropShadow dx="0" dy="2" stdDeviation="2.5" flood-color="#E44D26" flood-opacity="0.5"/>
+                                                </filter>
+                                                <filter id="glow-js" x="-20%" y="-20%" width="140%" height="140%">
+                                                    <feDropShadow dx="0" dy="2" stdDeviation="2.5" flood-color="#F7DF1E" flood-opacity="0.6"/>
+                                                </filter>
+                                                <filter id="glow-react" x="-20%" y="-20%" width="140%" height="140%">
+                                                    <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#53C1DE" flood-opacity="0.7"/>
+                                                </filter>
+                                            </defs>
+
+                                            <!-- Layer 1: HTML + CSS — the structural foundation -->
+                                            <g>
+                                                <path d="M0,25 v-5 L50,0 L100,20 v5 L50,45 Z" fill="url(#grad-html)" filter="url(#glow-html)"/>
+                                                <path d="M0,25 v-5 L50,40 v5 Z"/>
+                                                <path d="M50,45 v-5 L100,20 v5 Z"/>
+                                                <text x="50" y="15" dominant-baseline="middle" text-anchor="middle" font-size="6.8" font-family="Outfit, sans-serif" font-weight="700">HTML + CSS</text>
+                                            </g>
+
+                                            <!-- Layer 2: JavaScript — the logic layer -->
+                                            <g>
+                                                <path d="M0,25 v-5 L50,0 L100,20 v5 L50,45 Z" fill="url(#grad-js)" filter="url(#glow-js)"/>
+                                                <path d="M0,25 v-5 L50,40 v5 Z"/>
+                                                <path d="M50,45 v-5 L100,20 v5 Z"/>
+                                                <text x="50" y="15" dominant-baseline="middle" text-anchor="middle" font-size="6.8" font-family="Outfit, sans-serif" font-weight="700">JavaScript</text>
+                                            </g>
+
+                                            <!-- Layer 3: React — the experience layer -->
+                                            <g>
+                                                <path d="M0,25 v-5 L50,0 L100,20 v5 L50,45 Z" fill="url(#grad-react)" filter="url(#glow-react)"/>
+                                                <path d="M0,25 v-5 L50,40 v5 Z"/>
+                                                <path d="M50,45 v-5 L100,20 v5 Z"/>
+                                                <text x="50" y="15" dominant-baseline="middle" text-anchor="middle" font-size="6.8" font-family="Outfit, sans-serif" font-weight="700">React</text>
+                                            </g>
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Cloud & DevOps Card -->
+                        <div class="hs-slide">
+                            <div class="m3-hero-card" data-cursor-hover>
+                                <div class="card-bg card-bg-alt1"></div>
+                                <div class="card-content">
+                                    <div class="custom-icon">
+                                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                            <path stroke-linecap="round" stroke-linejoin="round"
+                                                d="M2.25 15a4.5 4.5 0 0 0 4.5 4.5H18a3.75 3.75 0 0 0 1.332-7.257 3 3 0 0 0-3.758-3.848 5.25 5.25 0 0 0-10.233 2.33A4.502 4.502 0 0 0 2.25 15Z" />
+                                        </svg>
+                                    </div>
+                                    <h3 class="display-medium">Cloud & DevOps</h3>
+                                    <p class="body-large text-popped">AWS & Azure deployment, scaling, CI/CD pipelines,
+                                        containerization, and IaC.</p>
+                                    <div class="tags">
+                                        <span>Migration Expert</span><span>Automation</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Mobile & Data Card -->
+                        <div class="hs-slide">
+                            <div class="m3-hero-card" data-cursor-hover>
+                                <div class="card-bg card-bg-alt2"></div>
+                                <div class="card-content">
+                                    <div class="custom-icon">
+                                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                            <path stroke-linecap="round" stroke-linejoin="round"
+                                                d="M10.5 1.5H8.25A2.25 2.25 0 0 0 6 3.75v16.5a2.25 2.25 0 0 0 2.25 2.25h7.5A2.25 2.25 0 0 0 18 20.25V3.75a2.25 2.25 0 0 0-2.25-2.25H13.5m-3 0V3h3V1.5m-3 0h3m-3 18.75h3" />
+                                        </svg>
+                                    </div>
+                                    <h3 class="display-medium">Mobile & AI</h3>
+                                    <p class="body-large text-popped">Native-feeling cross-platform apps (Flutter/Swift)
+                                        and Python for Data/AI integration.</p>
+                                    <div class="tags">
+                                        <span>Flutter/Dart</span><span>Swift</span><span>Python</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+            <!-- About / Quote Section (Standard Scroll Reveal) -->
+            <section id="about" class="quote-section full-screen bg-surface">
+                <div class="quote-container">
+                    <span class="material-symbols-rounded quote-marker">format_quote</span>
+                    <blockquote class="display-medium m3-on-surface-text reveal-text">
+                        "A good programmer is someone who always looks both ways before crossing a one-way street."
+                    </blockquote>
+                    <cite class="title-large m3-on-surface-variant reveal-text">— Doug Linder</cite>
+                </div>
+            </section>
+
+            <!-- Contact / Footer -->
+            <section id="contact" class="contact full-screen bg-surface-container-high">
+                <div class="contact-inner reveal-up-stagger">
+                    <h2 class="display-massive m3-primary-text">Let's Connect</h2>
+                    <p class="headline-large italic mb-4">One Commit at a Time.</p>
+                    <p class="body-large contact-desc">
+                        Looking for a curious, adaptable, and deeply technical partner for your next project or
+                        migration? Let's build the future together.
+                    </p>
+
+                    <a href="mailto:danycagiva@me.com" class="m3-pill-button" data-cursor-hover>
+                        <span class="btn-text">Send a Message</span>
+                        <span class="btn-circle"><span class="material-symbols-rounded">north_east</span></span>
+                    </a>
+                </div>
+
+                <footer class="bottom-footer">
+                    <div class="footer-links">
+                        <a href="https://github.com/danycagiva" data-cursor-hover>GitHub</a>
+                        <a href="https://medium.com/@danycagiva" data-cursor-hover>Medium</a>
+                    </div>
+                    <p class="body-small opacity-60">© 2026 Daniel Rusanow. Designed with bare metal HTML/CSS/JS.</p>
+                </footer>
+            </section>
+
+        </div>
+    </main>
+
+    <!-- External Libraries (Lenis & GSAP) -->
+    <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1.0.29/bundled/lenis.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
