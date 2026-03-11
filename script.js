@@ -16,6 +16,16 @@ gsap.ticker.add((time) => {
 });
 gsap.ticker.lagSmoothing(0); // Prevents GSAP from jumping on CPU spikes
 
+// Route all nav anchor clicks through Lenis so smooth scroll is preserved
+document.querySelectorAll('a[href^="#"]').forEach(link => {
+    link.addEventListener('click', (e) => {
+        const target = document.querySelector(link.getAttribute('href'));
+        if (!target) return;
+        e.preventDefault();
+        lenis.scrollTo(target, { duration: 1.4, easing: (t) => 1 - Math.pow(1 - t, 4) });
+    });
+});
+
 // 2. Custom Cursor & Ambient Orb Logic
 const cursor = document.getElementById('cursor');
 const cursorAura = document.getElementById('cursor-aura');
