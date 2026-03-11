@@ -173,6 +173,29 @@ revealTexts.forEach(text => {
     });
 });
 
+gsap.from('.muzika-mockup-wrap', {
+    y: 60,
+    opacity: 0,
+    duration: 1.2,
+    ease: "power4.out",
+    scrollTrigger: {
+        trigger: ".muzika-section",
+        start: "top 80%"
+    }
+});
+
+gsap.from('.muzika-text > *', {
+    y: 50,
+    opacity: 0,
+    duration: 1,
+    stagger: 0.12,
+    ease: "power4.out",
+    scrollTrigger: {
+        trigger: ".muzika-section",
+        start: "top 75%"
+    }
+});
+
 gsap.from('.contact-inner > *', {
     y: 60,
     opacity: 0,
