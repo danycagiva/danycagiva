@@ -335,6 +335,7 @@ h3,
 
 .hero-shape-ring {
     width: clamp(150px, 18vw, 280px);
+    height: clamp(150px, 18vw, 280px);
     aspect-ratio: 1;
     right: clamp(1rem, 9vw, 9rem);
     top: clamp(8rem, 18vh, 12rem);
@@ -347,6 +348,7 @@ h3,
 
 .hero-shape-diamond {
     width: clamp(72px, 9vw, 132px);
+    height: clamp(72px, 9vw, 132px);
     aspect-ratio: 1;
     right: clamp(7rem, 23vw, 24rem);
     bottom: clamp(5rem, 15vh, 11rem);
@@ -366,6 +368,7 @@ h3,
 
 .hero-shape-disc {
     width: clamp(52px, 6vw, 96px);
+    height: clamp(52px, 6vw, 96px);
     aspect-ratio: 1;
     left: clamp(1rem, 8vw, 9rem);
     bottom: clamp(6rem, 13vh, 10rem);
@@ -594,7 +597,10 @@ h3,
 
 .skill-visual {
     position: relative;
-    width: min(100%, 320px);
+    width: 320px;
+    max-width: 100%;
+    height: 320px;
+    max-height: 100%;
     aspect-ratio: 1;
     transform: translateX(6%);
     contain: layout paint style;
@@ -1018,12 +1024,14 @@ h3,
 
     .hero-shape-ring {
         width: 150px;
+        height: 150px;
         right: -44px;
         top: 16vh;
     }
 
     .hero-shape-diamond {
         width: 72px;
+        height: 72px;
         right: 12vw;
         bottom: 18vh;
         border-radius: 14px;
@@ -1038,6 +1046,7 @@ h3,
 
     .hero-shape-disc {
         width: 56px;
+        height: 56px;
         left: 8vw;
         bottom: 14vh;
     }
@@ -1122,6 +1131,7 @@ h3,
 
     .skill-visual {
         width: 100%;
+        height: 100%;
         transform: translateX(0);
     }
 
@@ -1232,7 +1242,10 @@ h3,
     }
 
     .skill-visual {
-        width: min(100%, 240px);
+        width: 240px;
+        max-width: 100%;
+        height: 240px;
+        max-height: 100%;
     }
 }
 
