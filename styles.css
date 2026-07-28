@@ -1281,188 +1281,20 @@ h3,
     filter: drop-shadow(0 40px 60px rgba(13, 110, 253, 0.20)) drop-shadow(0 10px 20px rgba(0,0,0,0.12));
 }
 
+.phone-mockup-img {
+    display: block;
+    width: 260px;
+    height: auto;
+    border-radius: 44px;
+}
+
 @keyframes muzika-float {
     0%   { transform: perspective(1400px) rotateY(-18deg) rotateX(6deg) rotateZ(2deg) translateY(0); }
     50%  { transform: perspective(1400px) rotateY(-18deg) rotateX(6deg) rotateZ(2deg) translateY(-18px); }
     100% { transform: perspective(1400px) rotateY(-18deg) rotateX(6deg) rotateZ(2deg) translateY(0); }
 }
 
-.phone-shell {
-    position: relative;
-    width: 260px;
-    height: 538px;
-    background: linear-gradient(160deg, #2a2a2e 0%, #111116 100%);
-    border-radius: 44px;
-    border: 1.5px solid rgba(255,255,255,0.12);
-    box-shadow:
-        inset 0 0 0 1px rgba(255,255,255,0.04),
-        0 0 0 8px rgba(255,255,255,0.04);
-    overflow: hidden;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.phone-notch {
-    position: relative;
-    z-index: 2;
-    margin-top: 12px;
-    width: 92px;
-    height: 28px;
-    background: #111116;
-    border-radius: 20px;
-    flex-shrink: 0;
-}
-
-.phone-screen {
-    flex: 1;
-    width: 100%;
-    overflow: hidden;
-    background: linear-gradient(160deg, #0d0d14 0%, #14101e 60%, #0a0d1a 100%);
-    display: flex;
-    flex-direction: column;
-}
-
-.phone-home-bar {
-    width: 100px;
-    height: 4px;
-    background: rgba(255,255,255,0.25);
-    border-radius: 4px;
-    margin-bottom: 10px;
-    flex-shrink: 0;
-}
-
-/* ── Screen UI (CSS-painted app UI) ──────────────────── */
-
-.phone-screen-ui {
-    display: flex;
-    flex-direction: column;
-    padding: 8px 14px 12px;
-    height: 100%;
-    box-sizing: border-box;
-    gap: 0;
-}
-
-.screen-status-bar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    font-size: 9px;
-    font-family: var(--font-heading);
-    font-weight: 600;
-    color: rgba(255,255,255,0.7);
-    margin-bottom: 14px;
-    letter-spacing: 0.02em;
-}
-
-.screen-icons {
-    font-size: 6px;
-    letter-spacing: 2px;
-    opacity: 0.6;
-}
-
-.screen-now-playing {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 6px;
-    flex: 1;
-}
-
-.screen-album-art {
-    width: 140px;
-    height: 140px;
-    border-radius: 20px;
-    background:
-        radial-gradient(circle at 30% 30%, #6f42c1 0%, #0D6EFD 50%, #0a0d1a 100%);
-    box-shadow: 0 16px 40px rgba(111,66,193,0.5), 0 4px 16px rgba(0,0,0,0.4);
-    flex-shrink: 0;
-    position: relative;
-    overflow: hidden;
-}
-
-.screen-album-art::after {
-    content: '♫';
-    position: absolute;
-    inset: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 3rem;
-    opacity: 0.25;
-    color: #fff;
-}
-
-.screen-track-name {
-    font-family: var(--font-heading);
-    font-weight: 700;
-    font-size: 13px;
-    color: #fff;
-    letter-spacing: -0.01em;
-    margin: 6px 0 1px;
-}
-
-.screen-artist {
-    font-size: 10px;
-    color: rgba(255,255,255,0.5);
-    font-family: var(--font-body);
-    margin: 0;
-}
-
-.screen-progress {
-    width: 100%;
-    height: 3px;
-    background: rgba(255,255,255,0.12);
-    border-radius: 3px;
-    margin-top: 8px;
-}
-
-.screen-progress-fill {
-    width: 45%;
-    height: 100%;
-    background: linear-gradient(90deg, #0D6EFD, #6f42c1);
-    border-radius: 3px;
-}
-
-.screen-controls {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 20px;
-    font-size: 14px;
-    color: rgba(255,255,255,0.6);
-    margin-top: 4px;
-    width: 100%;
-}
-
-.screen-play {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 36px;
-    height: 36px;
-    border-radius: 50%;
-    background: linear-gradient(135deg, #0D6EFD, #6f42c1);
-    color: #fff;
-    font-size: 12px;
-    box-shadow: 0 4px 16px rgba(13,110,253,0.45);
-    padding-left: 2px;
-}
-
-.screen-ai-pill {
-    margin-top: auto;
-    align-self: center;
-    font-size: 9px;
-    font-family: var(--font-body);
-    font-weight: 600;
-    letter-spacing: 0.05em;
-    color: rgba(255,255,255,0.8);
-    background: linear-gradient(135deg, rgba(111,66,193,0.35), rgba(13,110,253,0.35));
-    border: 1px solid rgba(111,66,193,0.4);
-    padding: 4px 12px;
-    border-radius: 20px;
-    backdrop-filter: blur(8px);
-}
+/* ── Phone mockup image ───────────────────────────────── */
 
 /* ── Text column ──────────────────────────────────────── */
 
@@ -1594,6 +1426,10 @@ h3,
         animation: muzika-float-mobile 4s ease-in-out infinite;
     }
 
+    .phone-mockup-img {
+        width: 260px;
+    }
+
     @keyframes muzika-float-mobile {
         0%   { transform: perspective(1400px) rotateY(0deg) rotateX(8deg) translateY(0); }
         50%  { transform: perspective(1400px) rotateY(0deg) rotateX(8deg) translateY(-14px); }
@@ -1621,22 +1457,9 @@ h3,
 }
 
 @media (max-width: 520px) {
-    .phone-shell {
+    .phone-mockup-img {
         width: min(240px, 72vw);
-        height: auto;
-        aspect-ratio: 260 / 538;
         border-radius: 36px;
-    }
-
-    .phone-notch {
-        width: 76px;
-        height: 22px;
-        margin-top: 10px;
-    }
-
-    .screen-album-art {
-        width: min(128px, 42vw);
-        height: min(128px, 42vw);
     }
 
     .muzika-desc {
